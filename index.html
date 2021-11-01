@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="main.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<title>Weather API</title>
+</head>
+<body>
+    <style>
+        body {
+        background-image: url(https://source.unsplash.com/1600x900/?landscape);
+        }
+    </style>
+    <div class="row">
+        <form>
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-2" id="standings">
+                <input type="text" onfocus="this.value=''" class="form-control" id="city" placeholder="Enter City Name">
+            </div>
+            <div class="col-md-2" id="standings">
+                <button type="button" class="btn btn-primary" onclick="loadData()">Get Weather</button>
+                <button type="button" class="btn btn-danger" onclick="clearData()">Clear</button>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <table id="productTable" class="table table-hover" style="display: none;">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">City</th>
+                        <th scope="col">Current</th>
+                        <th scope="col">High</th>
+                        <th scope="col">Low</th>
+                        <th scope="col">Condition</th>
+                        <th scope="col">Humidity</th>
+                        <th scope="col">Wind Speed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary" id='tr-0'></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

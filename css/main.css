@@ -1,0 +1,19 @@
+body{    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#standings{
+    padding-top: 5vh;
+}
+.pic{
+    height: 200px;
+    width: auto;
+    padding-top: 0vh;
+}
+.btn-primary{
+    margin-bottom: 2vh;
+    margin-right: 2vh;
+}
+.btn-danger{
+    margin-bottom: 2vh
+}
